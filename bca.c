@@ -1,8 +1,7 @@
 
 #include<stdio.h>
 
-void findWaitingTime(int processes[], int n,
-						int bt[], int wt[])
+void findWaitingTime(int processes[], int n,int bt[], int wt[])
 {
 	
 	wt[0] = 0;
@@ -12,8 +11,7 @@ void findWaitingTime(int processes[], int n,
 		wt[i] = bt[i-1] + wt[i-1] ;
 }
 
-void findTurnAroundTime( int processes[], int n,
-				int bt[], int wt[], int tat[])
+void findTurnAroundTime( int processes[], int n,int bt[], int wt[], int tat[])
 {
 	
 	// bt[i] + wt[i]
